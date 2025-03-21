@@ -52,3 +52,57 @@ console.log(first)
 const fruits = [ "banana", "mango", "arancia", "mela"];
 fruits.sort();
 console.log (fruits);*/
+
+//setter e getter//
+class Utente {
+   #job;
+
+   constructor(name, age, job){
+       this.name = name;
+       this.age = age;
+       this.#job = job;
+   }
+
+   #hello(){
+       console.log('ciao a tutti')
+   }
+
+   useHello(){
+       this.#hello()
+   }
+
+   descrizione(){
+       return l'utente ${this.name} ha ${this.age} anni ed è ${this.#job}
+   }
+
+   get getJob(){
+       console.log(this.#job)
+   }
+
+   set setJob(newJob){
+       this.#job = newJob
+   }
+}
+
+const mario = new Utente('Mario', 33, 'Sviluppatore')
+
+console.log(mario.descrizione())
+
+class Admin extends Utente {
+   constructor(name, age, job, role){
+       super(name, age, job);
+       this.role = role;
+   }
+
+   descrizione(){
+       console.log(super.descrizione() +  il suo ruolo è ${this.role})
+   }
+}
+
+const firstAdmin = new Admin('Pippo', 20, 'Astronauta', 'admin');
+
+firstAdmin.descrizione()
+NOVITÀ
+
+
+Invia un messaggio in @Manfredi Marrone (Tutor)
