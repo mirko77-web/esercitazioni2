@@ -1,3 +1,29 @@
+// Somma di due numeri
+let num1 = prompt("dieci:");
+let num2 = prompt("sette:");
+
+// Converti i valori in numeri
+let numero1 = parseFloat(num1);
+let numero2 = parseFloat(num2);
+
+// Calcola la somma
+let somma = numero1 + numero2;
+
+// Stampa la somma in console
+console.log(`La somma di ${numero1} e ${numero2} è ${somma}.`);
+
+// Verifica numero pari o dispari
+let num = prompt("otto:");
+let numero = parseInt(num);
+
+// Verifica se il numero è pari o dispari utilizzando il modulo %
+if (numero % 2 === 0) {
+  console.log(`${numero} è un numero pari.`);
+} else {
+  console.log(`${numero} è un numero dispari.`);
+}
+
+
 /*const cars = ["bmw","audi","jeep"];
 cars[1] = "mercedes"
 console.log(cars)
@@ -105,4 +131,3 @@ firstAdmin.descrizione()
 NOVITÀ
 
 
-Invia un messaggio in @Manfredi Marrone (Tutor)
